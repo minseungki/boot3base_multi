@@ -1,0 +1,14 @@
+repositories {
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+}
+
+apply plugin:'war'
+
+test {
+    useJUnitPlatform()
+}

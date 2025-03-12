@@ -1,0 +1,4 @@
+rootProject.name = 'demo'
+include 'core-module'
+include 'front-api'
+include 'admin-api'

@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    jdbc-url: jdbc:h2:file:./data/testdb
+    username: sa
+    password:
+
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      lettuce:
+        pool:
+          max-active: 10
+          max-idle: 5
+          min-idle: 5
+
+logging:
+  config: classpath:logback-dev.xml
+
+file:
+  upload:
+    location: /app/file
+    temp: temp/
+    public-url: http://localhost
+    private-url: http://localhost
